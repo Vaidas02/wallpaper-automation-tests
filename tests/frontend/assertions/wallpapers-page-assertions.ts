@@ -1,7 +1,7 @@
 import { expect, Page } from "@playwright/test";
-import { RingtonesAndWallapapersPage } from "../pages/ringtones-and-wallpapers-page";
+import { WallpapersPage as WallpapersPage } from "../pages/wallpapers-page";
 
-export class RingtonesAndWallapapersPageAssertions extends RingtonesAndWallapapersPage {
+export class WallpapersPageAssertions extends WallpapersPage {
     override readonly page: Page;
 
     constructor(page: Page) {

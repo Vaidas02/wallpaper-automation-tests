@@ -2,7 +2,7 @@ import { Locator, Page } from "@playwright/test";
 import BasePage from "./base-page";
 import { ElementRole } from "../../../utils/enum/locators-enum";
 
-export class RingtonesAndWallapapersPage extends BasePage {
+export class WallpapersPage extends BasePage {
     override readonly page: Page;
     readonly searchCategoryDropdownButton: Locator;
     readonly wallpaperRadioButton: Locator;
