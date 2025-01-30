@@ -1,7 +1,7 @@
 import { getSearchData } from "../../../test-data/search-data";
 import { test } from "../fixtures";
 
-test.describe.only("Test Suite: Search Functionality", { tag: ["@Regression", "@UI", "@SearchPage"] }, () => {
+test.describe("Test Suite: Search Functionality", { tag: ["@Regression", "@UI", "@SearchPage"] }, () => {
     test("TC_01 Verify that users can search for wallpapers using a keyword", { tag: "@Smoke" }, async ({ ringtonesAndWallapapersPage }) => {
         const searchData = getSearchData();
         await ringtonesAndWallapapersPage.selectSearchCategory();
