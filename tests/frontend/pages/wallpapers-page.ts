@@ -24,7 +24,7 @@ export class WallpapersPage extends BasePage {
         this.page = page;
         this.searchCategoryDropdownButton = page.getByRole(ElementRole.Main).getByRole(ElementRole.Button, { name: "All" });
         this.wallpaperRadioButton = page.getByRole(ElementRole.MenuItemRadio, { name: "Wallpapers" });
-        this.searchInput = page.getByRole(ElementRole.Main).getByPlaceholder("Search Zedge");
+        this.searchInput = page.locator("//div[@data-size='large']//input[@id='search']");
         this.searchButton = page.getByRole(ElementRole.Main).getByRole(ElementRole.Button, { name: "Search" });
         this.wallpapers = page.locator("//body/div[2]/main[1]/div[1]/div[1]/div[1]/div[2]/a");
         this.downloadButton = this.page.getByRole(ElementRole.Button, { name: "Download Free" });

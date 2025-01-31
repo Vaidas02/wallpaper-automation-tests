@@ -15,7 +15,7 @@ interface EnvironmentValues {
 
 const environment: Environment = {
     test: {
-        baseUrl: "https://www.zedge.net",
+        baseUrl: process.env.BASE_URL || "",
         apiUrl: "https://www.google.lt",
     },
 };
